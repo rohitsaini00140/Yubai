@@ -1,0 +1,67 @@
+import React from "react";
+import { Typography, Button } from "@mui/material";
+import { Box, Container, styled } from "@mui/system";
+import FeatureSection from "./FeatureSection";
+import PartnerSection from "./PartnerSection";
+import FirstCard from "./FirstCard";
+import Second from "./SecondCard";
+import ThirdCard from "./ThirdCard";
+import ForthCard from "./FourthCard";
+import FifthCard from "./FifthCard";
+
+const BecomePartner = () => {
+  return (
+    <>
+      <Box
+        sx={{
+          position: "relative",
+          width: "100%",
+          height: { xs: "60vh", sm: "30vh" },
+          backgroundImage: "url('/images/Cover.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          textAlign: "center",
+        }}
+      >
+        <Container>
+          <Typography
+            variant="h3"
+            sx={{ fontWeight: "bold", color: "#fff", mb: 2, fontSize: "40px" }}
+          >
+            Fast & easy delivery.
+          </Typography>
+        </Container>
+      </Box>
+
+      <Box sx={{ padding: { xs: "20px", sm: "50px", md: "50px" } }}>
+        <Typography variant="h3" sx={{ color: "black" }}>
+          Fast & easy delivery
+        </Typography>
+        <Typography sx={{ color: "black" }}>
+          We offer an end-to-end logistics service that makes it incredibly easy
+          to deliver to customers everywhere.
+        </Typography>
+        <Button variant="contained" sx={{ marginTop: 2, bgcolor: "#ce352f" }}>
+          Get Started
+        </Button>
+
+        <FeatureSection />
+        <PartnerSection />
+
+        <Box>
+          <h3>What our partners say</h3>
+          <FirstCard/>
+          <Second/>
+        <ThirdCard/>
+        <ForthCard/>
+        <FifthCard/>
+        </Box>
+      </Box>
+    </>
+  );
+};
+
+export default BecomePartner;
