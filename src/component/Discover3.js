@@ -8,7 +8,7 @@ function Discover3() {
         {/* Left Side - Content */}
         <Grid item xs={12} md={6}>
           <Box>
-            <Typography variant="h4"  sx={{fontSize:{xs:"24px",sm:"34px"},fontWeight:600,mt:{xs:"30px",sm:'0px'}}}>
+            <Typography variant="h4"  sx={{fontSize:{xs:"24px",sm:"34px"},fontWeight:600,mt:{xs:"30px",sm:'0px'},textAlign:'left'}}>
               Track your order in real-time
             </Typography>
             <Typography variant="body1" color="textSecondary" sx={{textAlign:"left",fontSize:{xs:"14px",sm:"16px"}}}>

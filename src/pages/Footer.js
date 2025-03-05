@@ -28,11 +28,11 @@ export default function Footer() {
             listStyle: "none" 
           }}
         >
-          <Link href="#" underline="none" color="inherit" sx={{textDecoration:"none",fontSize:{xs:"14px",sm:"16px"}}}>TERMS & CONDITIONS</Link>
-          <Link href="#" underline="none" color="inherit" sx={{textDecoration:"none",fontSize:{xs:"14px",sm:"16px"}}}>PRIVACY POLICY</Link>
-          <Link href="#" underline="none" color="inherit" sx={{textDecoration:"none",fontSize:{xs:"14px",sm:"16px"}}}>ABOUT</Link>
-          <Link href="/contact" underline="none" color="inherit"  sx={{textDecoration:"none",fontSize:{xs:"14px",sm:"16px"}}}>CONTACT</Link>
-          <Link href="#" underline="none" color="inherit" sx={{textDecoration:"none",fontSize:{xs:"14px",sm:"16px"}}}>CARRIER</Link>
+          <Link href="" underline="none" color="inherit" sx={{textDecoration:"none",fontSize:{xs:"14px",sm:"16px"}}}>Terms & Condition</Link>
+          <Link href="" underline="none" color="inherit" sx={{textDecoration:"none",fontSize:{xs:"14px",sm:"16px"}}}>Privacy Policy</Link>
+          <Link href="" underline="none" color="inherit" sx={{textDecoration:"none",fontSize:{xs:"14px",sm:"16px"}}}>Carrier</Link>
+          <Link href="/contact" underline="none" color="inherit"  sx={{textDecoration:"none",fontSize:{xs:"14px",sm:"16px"}}}>Contact</Link>
+          <Link href="" underline="none" color="inherit" sx={{textDecoration:"none",fontSize:{xs:"14px",sm:"16px"}}}>Affiliate Links Store</Link>
         </Typography>
       </Container>
     </Box>

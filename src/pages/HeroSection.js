@@ -1,4 +1,4 @@
-import { Button, Typography } from "@mui/material";
+import { Button, Link, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import Discover from "../component/Discover";
 import Discover2 from "../component/Discover2";
@@ -30,19 +30,22 @@ const HeroSection = () => {
           >
             Fast & easy delivery.
           </Typography>
+
+          <Link href="/contact">
           <Button
             variant="contained"
             sx={{
-              backgroundColor: "#00A77E",
+              backgroundColor: "#ce352f",
               color: "#fff",
-              height:"40px",
+              height:"35px",
               fontSize: "18px",
               borderRadius: "8px",
-              "&:hover": { backgroundColor: "#008766" },
+              "&:hover": { backgroundColor: "#ce352f" },
             }}
           >
             GET THE APP
           </Button>
+          </Link>
         </Container>
       </Box>
       <Discover />

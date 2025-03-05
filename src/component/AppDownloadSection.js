@@ -3,7 +3,7 @@ import { Box, Container, Grid, Typography,} from "@mui/material";
 export default function AppDownloadSection() {
   return (
     <Box sx={{ textAlign: "center", py: 2 }}>
-      <Typography variant="h6" sx={{ fontWeight: "bold", mb: 2 }}>
+      <Typography variant="h6" sx={{fontSize:{xs:"24px",sm:"28px"}, fontWeight: "bold", mb: 4 }}>
         Get the app today
       </Typography>
       <Container maxWidth="sm">

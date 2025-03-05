@@ -21,7 +21,7 @@ const navItems = [
   { label: "Contact", href: "/contact" },
   // { label: "Privacy", href: "/private" },
   { label: "Media Updates", href: "/media" },
-  { label: "Ecommerce", href: "#" },
+  { label: "Affiliate Links Store", href: "#" },
 ];
 
 const Header = () => {
@@ -114,9 +114,9 @@ const Header = () => {
         open={openDrawer}
         onClose={() => setOpenDrawer(false)}
       >
-        <List sx={{ width: 250 }}>
+        <List sx={{ width: 250 }} >
           {navItems.map((item, index) => (
-            <ListItem button key={item} onClick={() => setOpenDrawer(false)}>
+            <ListItem  button key={item} onClick={() => setOpenDrawer(false)}>
               <Link
                 key={index}
                 href={item.href}
