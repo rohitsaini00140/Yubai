@@ -5,16 +5,10 @@ import {
   Autocomplete,
   Button,
   Card,
-  FormControl,
-  InputLabel,
-  MenuItem,
-  Select,
   TextField,
   Typography,
 } from "@mui/material";
-import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
-import MarkEmailUnreadIcon from "@mui/icons-material/MarkEmailUnread";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
+
 import "react-phone-input-2/lib/style.css";
 import PhoneInput from "react-phone-input-2";
 

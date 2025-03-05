@@ -28,11 +28,11 @@ export default function Footer() {
             listStyle: "none" 
           }}
         >
-          <Link href="#" underline="none" color="inherit" sx={{textDecoration:"none"}}>TERMS & CONDITIONS</Link>
-          <Link href="#" underline="none" color="inherit">PRIVACY POLICY</Link>
-          <Link href="#" underline="none" color="inherit">ABOUT</Link>
-          <Link href="#" underline="none" color="inherit">CONTACT</Link>
-          <Link href="#" underline="none" color="inherit">FAQS</Link>
+          <Link href="#" underline="none" color="inherit" sx={{textDecoration:"none",fontSize:{xs:"14px",sm:"16px"}}}>TERMS & CONDITIONS</Link>
+          <Link href="#" underline="none" color="inherit" sx={{textDecoration:"none",fontSize:{xs:"14px",sm:"16px"}}}>PRIVACY POLICY</Link>
+          <Link href="#" underline="none" color="inherit" sx={{textDecoration:"none",fontSize:{xs:"14px",sm:"16px"}}}>ABOUT</Link>
+          <Link href="/contact" underline="none" color="inherit"  sx={{textDecoration:"none",fontSize:{xs:"14px",sm:"16px"}}}>CONTACT</Link>
+          <Link href="#" underline="none" color="inherit" sx={{textDecoration:"none",fontSize:{xs:"14px",sm:"16px"}}}>CARRIER</Link>
         </Typography>
       </Container>
     </Box>

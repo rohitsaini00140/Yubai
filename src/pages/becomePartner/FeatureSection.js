@@ -1,6 +1,5 @@
 import React from "react";
-import { Grid, Card, CardContent, Typography, Box } from "@mui/material";
-import { Campaign, Language, LocationOn } from "@mui/icons-material";
+import { Grid, CardContent, Typography, Box } from "@mui/material";
 
 const features = [
   {

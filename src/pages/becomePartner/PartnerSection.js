@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Grid, Typography, Button, Box, Avatar } from "@mui/material";
+import { Container, Grid, Typography, Button, Box,} from "@mui/material";
 
 const partners = [
   { name: "Roadster", src:"/partnerlogo/Stores-01.png" },

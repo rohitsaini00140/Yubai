@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   AppBar,
   Toolbar,
   Typography,
-  Button,
   Box,
   IconButton,
   Drawer,
@@ -23,14 +22,41 @@ const navItems = [
   // { label: "Privacy", href: "/private" },
   { label: "Media Updates", href: "/media" },
   { label: "Ecommerce", href: "#" },
-  
 ];
 
 const Header = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
 
+  const [isFixed, setIsFixed] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 30) {
+        setIsFixed(true);
+      } else {
+        setIsFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <AppBar position="static" color="transparent" elevation={0}>
+    <AppBar
+      position={isFixed ? "fixed" : "static"}
+      // color="transparent"
+
+      elevation={isFixed ? 3 : 0}
+      sx={{
+        transition: "top 0.3s ease-in-out",
+        top: isFixed ? 0 : "auto",
+        bgcolor: "white",
+        color: "black",
+        scrollBehavior:"smooth",
+      }}
+    >
       <Toolbar
         sx={{
           display: "flex",
@@ -59,8 +85,9 @@ const Header = () => {
               key={index}
               href={item.href}
               underline="none"
-              color={window.location.pathname === item.href ? "green" : "inherit"}
-             
+              color={
+                window.location.pathname === item.href ? "green" : "inherit"
+              }
               sx={{
                 transition: "color 0.3s",
                 "&:hover": { color: "red" },
@@ -93,7 +120,7 @@ const Header = () => {
               <Link
                 key={index}
                 href={item.href}
-                underline="hover"
+                underline="none"
                 color="inherit"
               >
                 <ListItemText primary={item.label} />

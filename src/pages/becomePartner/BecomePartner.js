@@ -1,6 +1,6 @@
 import React from "react";
 import { Typography, Button } from "@mui/material";
-import { Box, Container, styled } from "@mui/system";
+import { Box, Container} from "@mui/system";
 import FeatureSection from "./FeatureSection";
 import PartnerSection from "./PartnerSection";
 import FirstCard from "./FirstCard";
@@ -37,10 +37,10 @@ const BecomePartner = () => {
       </Box>
 
       <Box sx={{ padding: { xs: "20px", sm: "50px", md: "50px" } }}>
-        <Typography variant="h3" sx={{ color: "black" }}>
+        <Typography variant="h3" sx={{fontSize:{xs:"24px",sm:"34px"},fontWeight:600,mt:{xs:"30px",sm:'0px'}}}>
           Fast & easy delivery
         </Typography>
-        <Typography sx={{ color: "black" }}>
+        <Typography sx={{ color: "black",mt:"10px"}}>
           We offer an end-to-end logistics service that makes it incredibly easy
           to deliver to customers everywhere.
         </Typography>

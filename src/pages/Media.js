@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Grid, Typography, Link } from "@mui/material";
+import { Container, Typography} from "@mui/material";
 
 function Media() {
   return (

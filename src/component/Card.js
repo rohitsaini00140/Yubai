@@ -6,20 +6,22 @@ const data = [
     description:
       "Reach new customers, grow your revenues, and deliver to the city’s best clients.",
     buttonText: "PARTNER WITH US",
-    image: "https://img.freepik.com/free-vector/beautiful-green-landscape-background_1048-2991.jpg",
+    image:
+      "https://img.freepik.com/free-vector/beautiful-green-landscape-background_1048-2991.jpg",
   },
   {
-    title: "DELIVER FOR Tubai",
+    title: "DELIVER FOR Dubai",
     description:
       "Work flexible hours, earn more money, and deliver for the city’s trendiest restaurants.",
-    buttonText: "أريد الانضمام",
-    image: "https://img.freepik.com/free-vector/beautiful-green-landscape-background_1048-2991.jpg",
+    buttonText: "PARTNER WITH US ",
+    image:
+      "https://img.freepik.com/free-vector/beautiful-green-landscape-background_1048-2991.jpg",
   },
 ];
 
 const Card = () => {
   return (
-    <Grid container spacing={2} sx={{ padding:10 }}>
+    <Grid container spacing={2} sx={{ padding: "50px" }}>
       {data.map((item, index) => (
         <Grid item xs={12} sm={6} key={index}>
           <Box
@@ -37,7 +39,7 @@ const Card = () => {
               padding: 3,
               color: "white",
               fontWeight: "bold",
-              '&::before': {
+              "&::before": {
                 content: '""',
                 position: "absolute",
                 top: 0,
@@ -50,10 +52,10 @@ const Card = () => {
             }}
           >
             <Box sx={{ position: "relative", zIndex: 2 }}>
-              <Typography variant="h5" fontWeight="bold">
+              <Typography variant="h5" sx={{fontSize:{xs:"24px",sm:"34px"},fontWeight:600,mt:{xs:"30px",sm:'0px'}}}>
                 {item.title}
               </Typography>
-              <Typography variant="body1" mt={1}>
+              <Typography variant="body1" mt={1} sx={{textAlign:"left",fontSize:{xs:"14px",sm:"16px"}}}>
                 {item.description}
               </Typography>
               <Button
