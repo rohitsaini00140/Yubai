@@ -15,7 +15,7 @@ const data = [
       "Work flexible hours, earn more money, and deliver for the city’s trendiest restaurants.",
     buttonText: "PARTNER WITH US ",
     image:
-      "https://img.freepik.com/free-vector/beautiful-green-landscape-background_1048-2991.jpg",
+      "/images/newimg.jpg",
   },
 ];
 

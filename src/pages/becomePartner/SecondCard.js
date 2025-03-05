@@ -30,7 +30,7 @@ function Second() {
             src="/images/Untitled.png"
             alt="Discover Image"
             sx={{
-              width: { xs: "80%", md: "70%" },
+              width: { xs: "90%", md: "70%" },
               borderRadius: 1,
               height: { xs: "300px", md: "250px" },
               mt: "40px",

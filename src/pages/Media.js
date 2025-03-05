@@ -3,8 +3,8 @@ import { Container, Typography} from "@mui/material";
 
 function Media() {
   return (
-    <Container sx={{ padding:{xs:"50px 50px",sm: "50px 100px" }}}>
-      <Typography variant="h4" gutterBottom>
+    <Container sx={{ padding:{xs:"50px 50px",sm: "40px 90px" }}}>
+      <Typography variant="h4" gutterBottom  sx={{fontSize:{xs:"24px",sm:"34px"},fontWeight:600,mt:{xs:"30px",sm:'0px'},textAlign:"left"}} >
         Yubai closes $18Mn Series B Round
       </Typography>
       <Typography variant="body1" paragraph sx={{textAlign:"left"}}>

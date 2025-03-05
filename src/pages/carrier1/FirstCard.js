@@ -18,10 +18,10 @@ function FirstCard() {
         {/* Right Side - Image */}
         <Grid item xs={12} md={6}>
           <Box   sx={{textAlign:'left'}}>
-            <Typography variant="h4" gutterBottom>
+            <Typography variant="h4" gutterBottom sx={{fontSize:{xs:"24px",sm:"34px"},fontWeight:600,mt:{xs:"30px",sm:'0px'}}}>
             Grow with us
             </Typography>
-            <Typography variant="body1" color="textSecondary">
+            <Typography variant="body1" color="textSecondary" sx={{textAlign:"left",fontSize:{xs:"14px",sm:"16px"}}}>
             Join a growing, fast-paced startup with a lot of opportunity for innovation and career advancement. Today you’re in our Beirut HQ; tomorrow you’re leading our launch in new cities.
             </Typography>
           </Box>

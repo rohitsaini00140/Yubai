@@ -38,7 +38,7 @@ const BecomePartner = () => {
 
       <Box sx={{ padding: { xs: "20px", sm: "50px", md: "50px" } }}>
         <Typography variant="h3" sx={{fontSize:{xs:"24px",sm:"34px"},fontWeight:600,mt:{xs:"30px",sm:'0px'}}}>
-          Fast & easy delivery
+        Partner with Us
         </Typography>
         <Typography sx={{ color: "black",mt:"10px"}}>
           We offer an end-to-end logistics service that makes it incredibly easy
@@ -52,7 +52,7 @@ const BecomePartner = () => {
         <PartnerSection />
 
         <Box>
-          <h3>What our partners say</h3>
+          <Typography variant="h3" sx={{fontSize:{xs:"24px",sm:"34px"},fontWeight:600,mt:{xs:"30px",sm:'0px'}}} >What our partners say</Typography>
           <FirstCard/>
           <Second/>
         <ThirdCard/>

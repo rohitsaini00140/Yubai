@@ -9,10 +9,10 @@ function Second() {
         {/* Left Side - Content */}
         <Grid item xs={12} md={6}>
           <Box sx={{textAlign:"left"}}>
-            <Typography variant="h4" gutterBottom  >
+            <Typography variant="h4" gutterBottom sx={{fontSize:{xs:"24px",sm:"34px"},fontWeight:600,mt:{xs:"30px",sm:'0px'}}} >
               Discover your favorite stores
             </Typography>
-            <Typography variant="body1" color="textSecondary">
+            <Typography variant="body1" color="textSecondary" sx={{textAlign:"left",fontSize:{xs:"14px",sm:"16px"}}}>
               From coffee to Italian food, fresh groceries, and electronics,
               we’ve got all your favorite restaurants and stores all in one
               place.
