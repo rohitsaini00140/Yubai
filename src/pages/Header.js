@@ -21,7 +21,7 @@ const navItems = [
   { label: "Contact", href: "/contact" },
   // { label: "Privacy", href: "/private" },
   { label: "Media Updates", href: "/media" },
-  { label: "Affiliate Links Store", href: "#" },
+  { label: "Affiliate Amazon Market", href: "/affiliate-market" },
 ];
 
 const Header = () => {

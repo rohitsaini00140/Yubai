@@ -10,6 +10,8 @@ import ScrollToTop from "./component/ScrollToTop";
 import Carrier from "./pages/carrier1/Carrier";
 import Contact from "./pages/Contact";
 import BecomePartner from "./pages/becomePartner/BecomePartner";
+import AffiliateMarket from "./pages/affaliateMarcket/AffalatteMarcket";
+import AffiliateMarketDetail from "./pages/affaliateMarcket/AffalatteMarcketDetail";
 
 function App() {
   return (
@@ -24,14 +26,18 @@ function App() {
           <Route path="/private" element={<Private />} />
 
           <Route path="/carrier" element={<Carrier />} />
-          <Route path="/media" element={<Media/>} />
-          <Route path="/contact" element={<Contact/>} />
-          <Route path="/partner" element={<BecomePartner/>} />
-
+          <Route path="/media" element={<Media />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/partner" element={<BecomePartner />} />
+          <Route path="/affiliate-market" element={<AffiliateMarket />} />
+          <Route
+            path="/affiliate-market/:slug"
+            element={<AffiliateMarketDetail />}
+          />
         </Routes>
 
         <Footer />
-        <ScrollToTop/>
+        <ScrollToTop />
       </div>
     </Router>
   );

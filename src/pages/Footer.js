@@ -32,7 +32,7 @@ export default function Footer() {
           <Link href="" underline="none" color="inherit" sx={{textDecoration:"none",fontSize:{xs:"14px",sm:"16px"}}}>Privacy Policy</Link>
           <Link href="" underline="none" color="inherit" sx={{textDecoration:"none",fontSize:{xs:"14px",sm:"16px"}}}>Carrier</Link>
           <Link href="/contact" underline="none" color="inherit"  sx={{textDecoration:"none",fontSize:{xs:"14px",sm:"16px"}}}>Contact</Link>
-          <Link href="" underline="none" color="inherit" sx={{textDecoration:"none",fontSize:{xs:"14px",sm:"16px"}}}>Affiliate Links Store</Link>
+          <Link href="/affilate-marcket" underline="none" color="inherit" sx={{textDecoration:"none",fontSize:{xs:"14px",sm:"16px"}}}>Affiliate Amazon Market</Link>
         </Typography>
       </Container>
     </Box>
