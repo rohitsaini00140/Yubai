@@ -38,7 +38,7 @@ function AffiliateMarket() {
 
   return (
     <Container maxWidth="lg" sx={{ mt: 5, mb: 10,height:"auto" }}>
-      <Typography variant="h3" align="left" gutterBottom>
+      <Typography variant="h3" align="left" gutterBottom  sx={{fontSize:{xs:"32px",sm:"34px"},fontWeight:600,}}>
         Affiliate Products
       </Typography>
 
@@ -46,7 +46,7 @@ function AffiliateMarket() {
         {products.map((product) => (
           <Grid item xs={12} sm={6} md={6} key={product.id}>
             <Card
-              sx={{ borderRadius: 2, boxShadow: 3, cursor: "pointer" }}
+              sx={{ borderRadius: 2, boxShadow: 3, cursor: "pointer", }}
               onClick={() => handleCardClick(product.slug)}
             >
               <CardMedia
@@ -61,7 +61,7 @@ function AffiliateMarket() {
               />
               <CardContent>
                 <Typography variant="h6" fontWeight="bold" sx={{ mt: 2, textAlign: "left" }}>
-                  {product.title}
+                  {product.title.length > 50 ? product.title.substring(0,45) + "..." : product.title}
                 </Typography>
                 <Typography variant="body2" color="textSecondary" sx={{textAlign: "left" }}>
                   {product.description.length > 100
@@ -78,7 +78,7 @@ function AffiliateMarket() {
                               component="span"
                               sx={{ fontWeight: "bold", fontSize: "18px" }}
                             >
-                              Price: ${" "}
+                              Price:(AED) {" "}
                             </Typography>
                             {product.price}
                           </Typography>

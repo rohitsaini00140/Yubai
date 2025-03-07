@@ -15,7 +15,7 @@ import {
 import AppsIcon from "@mui/icons-material/Apps"; // Correctly imported AppsIcon
 
 const navItems = [
-  { label: "Become a Partner", href: "partner" },
+  { label: "Become A Partner", href: "/partner" },
   // { label: "Deliver for yubai", href: "#" },
   { label: "Careers", href: "/carrier" },
   { label: "Contact", href: "/contact" },
@@ -89,9 +89,13 @@ const Header = () => {
                 window.location.pathname === item.href ? "green" : "inherit"
               }
               sx={{
-                transition: "color 0.3s",
-                "&:hover": { color: "red" },
-                "&:active": { color: "green" },
+                transition: "background-color 0.3s",
+                padding: "8px 16px", // Thoda padding de rahe hain taake bg dikhe
+                borderRadius: "5px", // Thoda styling ke liye
+                color: window.location.pathname === item.href ? "white": "black",
+                bgcolor: window.location.pathname === item.href ? "green" : "transparent",
+                "&:hover": { bgcolor: "red",color:"white" },
+                "&:active": { bgcolor: "green" },
               }}
             >
               {item.label}

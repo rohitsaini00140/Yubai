@@ -3,7 +3,7 @@ import { Grid, CardContent, Typography, Box } from "@mui/material";
 
 const features = [
   {
-    image: "/images/Partners-4.jpg",
+    image: "/partnerlogo/Logoicons.jpg",
     title: "INCREMENTAL SALES AND EXPOSURE",
     description:
       "Increase your sales and reach new customers. Our commercial team is here to make your growth journey simple.",

@@ -73,7 +73,7 @@ function AffiliateMarketDetail() {
               component="span"
               sx={{ fontWeight: "bold", fontSize: "18px" }}
             >
-              Price: ${" "}
+              Price: (AED){" "}
             </Typography>
             {product.price}
           </Typography>
