@@ -37,7 +37,7 @@ function AffiliateMarket() {
   };
 
   return (
-    <Container maxWidth="lg" sx={{ mt: 5, mb: 10 }}>
+    <Container maxWidth="lg" sx={{ mt: 5, mb: 10,height:"auto" }}>
       <Typography variant="h3" align="left" gutterBottom>
         Affiliate Products
       </Typography>
@@ -60,30 +60,41 @@ function AffiliateMarket() {
                 alt={product.title}
               />
               <CardContent>
-                <Typography variant="h6" fontWeight="bold">
+                <Typography variant="h6" fontWeight="bold" sx={{ mt: 2, textAlign: "left" }}>
                   {product.title}
                 </Typography>
-                <Typography variant="body2" color="textSecondary">
+                <Typography variant="body2" color="textSecondary" sx={{textAlign: "left" }}>
                   {product.description.length > 100
                     ? product.description.substring(0, 100) + "..."
                     : product.description}
                 </Typography>
-                <Typography
-                  variant="caption"
-                  display="block"
-                  color="gray"
-                  sx={{ mt: 1 }}
-                >
-                  Price :${product.price}
-                </Typography>
-                <Typography
-                  variant="caption"
-                  display="block"
-                  color="gray"
-                  sx={{ mt: 1 }}
-                >
-                  Category : ${product.category_name}
-                </Typography>
+
+                  <Typography
+                            variant="h6"
+                            color="gray"
+                            sx={{ mt: 2, textAlign: "left" }}
+                          >
+                            <Typography
+                              component="span"
+                              sx={{ fontWeight: "bold", fontSize: "18px" }}
+                            >
+                              Price: ${" "}
+                            </Typography>
+                            {product.price}
+                          </Typography>
+                
+                          <Typography
+                            variant="caption"
+                            display="block"
+                            color="gray"
+                            sx={{ mt: 1, textAlign: "left" }}
+                          >
+                            <Typography component="span" sx={{ fontWeight: "bold" }}>
+                              Category :
+                            </Typography>{" "}
+                            {product.category_name}
+                          </Typography>
+                
               </CardContent>
             </Card>
           </Grid>
