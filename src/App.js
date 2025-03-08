@@ -13,6 +13,8 @@ import BecomePartner from "./pages/becomePartner/BecomePartner";
 import AffiliateMarket from "./pages/affaliateMarcket/AffalatteMarcket";
 import AffiliateMarketDetail from "./pages/affaliateMarcket/AffalatteMarcketDetail";
 import PrivacyPolicy from "./pages/privatepolicy/PrivacyPolicy";
+import TermsConditions from "./pages/TermsConditions/TermsConditions";
+import PageNotFound from "./pages/PagenotFound";
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
           <Route path="/partner" element={<BecomePartner />} />
           <Route path="/affiliate-market" element={<AffiliateMarket />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
+          <Route path="/terms-condition" element={<TermsConditions/>} />
+          <Route path="*" element={<PageNotFound />} />
 
           <Route
             path="/affiliate-market/:slug"

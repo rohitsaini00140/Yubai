@@ -60,7 +60,7 @@ const BecomePartner = () => {
         </Link>
 
         <FeatureSection />
-        <PartnerSection />
+        {/* <PartnerSection /> */}
 
         <Box>
           <Typography

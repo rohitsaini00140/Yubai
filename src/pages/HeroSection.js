@@ -28,7 +28,7 @@ const HeroSection = () => {
             variant="h3"
             sx={{ fontWeight: "bold", color: "#fff", mb: 2 }}
           >
-            Fast & easy delivery.
+           Delivering Hapiness
           </Typography>
 
           <Link href="/contact">

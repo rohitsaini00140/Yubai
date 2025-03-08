@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Grid, Stack } from "@mui/system";
+import { Box, Container, Grid, Stack } from "@mui/system";
 import emailjs from "emailjs-com";
 import {
   Autocomplete,
@@ -8,9 +8,12 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-
+import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
+import MarkEmailUnreadIcon from "@mui/icons-material/MarkEmailUnread";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 import "react-phone-input-2/lib/style.css";
 import PhoneInput from "react-phone-input-2";
+import { Link } from "react-router-dom";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -96,15 +99,122 @@ function Contact() {
 
   return (
     <Stack component={"div"}>
+          <Box
+        sx={{
+          position: "relative",
+          width: "100%",
+          height: "50vh",
+          backgroundImage: "url('/images/banner.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          textAlign: "center",
+        }}
+      >
+        <Container>
+          <Typography
+            variant="h3"
+            sx={{ fontWeight: "bold", color: "#fff", mb: 2 }}
+          >
+           Delivering Hapiness
+          </Typography>
 
-      <Box sx={{ padding: {xs:"1rem",sm:"1rem 10rem"}, maxWidth: "100%", margin: "auto" }}>
+          <Link href="/contact">
+          <Button
+            variant="contained"
+            sx={{
+              backgroundColor: "#ce352f",
+              color: "#fff",
+              height:"35px",
+              fontSize: "18px",
+              borderRadius: "8px",
+              "&:hover": { backgroundColor: "#ce352f" },
+            }}
+          >
+            GET THE APP
+          </Button>
+          </Link>
+        </Container>
+      </Box>
+
+      <Box sx={{ padding: "1rem", maxWidth: "100%", margin: "auto" }}>
         <form onSubmit={handleSubmit}>
-          <Card elevation={2} sx={{ padding: "2rem" }}>
+          <Card elevation={4} sx={{ padding: "2rem" }}>
             <Grid container spacing={4}>
               {/* Left Section */}
+              <Grid
+                item
+                size={{ xs: 12, md: 5 }}
+                sx={{
+                  display: "inline-grid",
+                  justifyContent: { xs: "left", sm: "center" },
+                }}
+              >
+                <Typography
+                  variant="h5"
+                  sx={{ fontWeight: "bold", color: "#eaaa00", mb: 2 }}
+                >
+                  OFFICE In Dubai
+                </Typography>
+                <Box>
+                  <Typography
+                    component={"div"}
+                    gutterBottom
+                    sx={{ display: "flex" }}
+                  >
+                    <span style={{ color: "#eaaa00" }}>
+                      <LocationOnIcon />
+                    </span>
+                    <strong style={{ fontSize: "18px" }}>Location</strong>
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    gutterBottom
+                    sx={{ fontSize: "16px" ,textAlign:'left'}}
+                  >
+                    Al Warsan- Office number - S09, Dubai , <br />
+                    United Arab Emirates <br />
+                  </Typography>
 
-              <Grid item size={{ xs: 12, md: 12}}>
-                <Typography variant="h5" sx={{ fontWeight: "bold", mb: 2,textAlign:'left' }}>
+                  <Typography
+                    variant="body1"
+                    gutterBottom
+                    sx={{ mt: 2, display: "flex" }}
+                  >
+                    <span style={{ color: "#eaaa00" }}>
+                      <PhoneAndroidIcon />
+                    </span>
+                    <strong style={{ fontSize: "18px" }}>Phone</strong>
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    gutterBottom
+                    sx={{ fontSize: "16px",textAlign:'left' }}
+                  >
+                    +971 55 654 0154
+                  </Typography>
+
+                  <Typography
+                    variant="body1"
+                    gutterBottom
+                    sx={{ mt: 2, display: "flex" }}
+                  >
+                    <span style={{ display: "flex", color: "#eaaa00" }}>
+                      <MarkEmailUnreadIcon />
+                    </span>
+                    <strong style={{ fontSize: "18px" }}>Email</strong>
+                  </Typography>
+                  <Typography variant="body2" sx={{ fontSize: "16px",textAlign:'left' }}>
+                    info@universalallianceexpress.com
+                  </Typography>
+                </Box>
+              </Grid>
+
+              {/* Right Section */}
+              <Grid item size={{ xs: 12, md: 7 }}>
+                <Typography variant="h5" sx={{ fontWeight: "bold", mb: 2 }}>
                   CONTACT US
                 </Typography>
                 <Grid container spacing={2}>
@@ -204,6 +314,15 @@ function Contact() {
         </form>
       </Box>
 
+      <Box sx={{ margin: "20px" }}>
+        <iframe
+          src="https://www.google.com/maps?q=25.2600410,55.2901700&z=15&output=embed"
+          width="100%"
+          height="320"
+          aria-hidden="false"
+          title="Google Map"
+        ></iframe>
+      </Box>
     </Stack>
   );
 }

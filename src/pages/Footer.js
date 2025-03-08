@@ -29,7 +29,7 @@ export default function Footer() {
           }}
         >
           <Link
-            href="/media"
+            href="/terms-condition"
             underline="none"
             color="inherit"
             sx={{
@@ -37,7 +37,7 @@ export default function Footer() {
               fontSize: { xs: "14px", sm: "16px" },
             }}
           >
-           Media Updates
+           Terms & Conditions
           </Link>
           <Link
             href="/privacy-policy"

@@ -5,8 +5,11 @@ import {
   Card,
   CardMedia,
   CardContent,
+  CardActions,
+  Button,
 } from "@mui/material";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import PageNotFound from "../PagenotFound";
 
 function AffiliateMarketDetail() {
   const { slug } = useParams();
@@ -38,19 +41,24 @@ function AffiliateMarketDetail() {
   if (loading) return <Typography>Loading...</Typography>;
   if (!product) return <Typography>Product not found</Typography>;
 
+  console.log(product, "kua aa raha ha ");
+
   return (
     <Container maxWidth="md" sx={{ mt: 5, mb: 10 }}>
       <Card sx={{ borderRadius: 2 }} elevation={0}>
         <CardMedia
           component="img"
-          height="300"
+          sx={{
+            height: 400,
+            objectFit: "contain", // Ensures image fits without being cropped
+          }}
           image={
             product.image_url !== "not found"
               ? product.image_url
               : "/images/product-display.jpg"
           }
-          //   alt={product.title}
         />
+
         <CardContent>
           <Typography variant="h4" fontWeight="bold" sx={{ textAlign: "left" }}>
             {product.title}
@@ -60,9 +68,8 @@ function AffiliateMarketDetail() {
             color="textSecondary"
             sx={{ mt: 2, textAlign: "left" }}
           >
-            {product.description}
+            {product.description.replace(/<\/?[^>]+(>|$)/g, "")}
           </Typography>
-
 
           <Typography
             variant="h6"
@@ -89,9 +96,32 @@ function AffiliateMarketDetail() {
             </Typography>{" "}
             {product.category_name}
           </Typography>
-
-          
         </CardContent>
+
+        <CardActions>
+        {product?.affiliate_url ? (
+  <Link to={product.affiliate_url} target="_blank" >
+    <Button
+      variant="contained"
+      sx={{
+        backgroundColor: "#ce352f",
+        color: "#fff",
+        height: "35px",
+        fontSize: "14px",
+        borderRadius: "5px",
+        "&:hover": { backgroundColor: "#ce352f" },
+      }}
+    >
+      Buy Now
+    </Button>
+  </Link>
+) :  (
+  <Button variant="contained" disabled sx={{ height: "35px", fontSize: "14px" }}>
+  <PageNotFound/>
+  </Button>
+)}
+
+        </CardActions>
       </Card>
     </Container>
   );

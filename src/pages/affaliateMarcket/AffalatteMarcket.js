@@ -37,64 +37,82 @@ function AffiliateMarket() {
   };
 
   return (
-    <Container maxWidth="lg" sx={{ mt: 5, mb: 10,height:"auto" }}>
-      <Typography variant="h3" align="left" gutterBottom  sx={{fontSize:{xs:"32px",sm:"34px"},fontWeight:600,}}>
+    <Container maxWidth="lg" sx={{ mt: 5, mb: 10, height: "auto" }}>
+      <Typography
+        variant="h3"
+        align="left"
+        gutterBottom
+        sx={{ fontSize: { xs: "32px", sm: "34px" }, fontWeight: 600 }}
+      >
         Affiliate Products
       </Typography>
 
       <Grid container spacing={3}>
         {products.map((product) => (
-          <Grid item xs={12} sm={6} md={6} key={product.id}>
+          <Grid item xs={12} sm={4} md={4} key={product.id}>
             <Card
-              sx={{ borderRadius: 2, boxShadow: 3, cursor: "pointer", }}
+              sx={{ borderRadius: 2, boxShadow: 3, cursor: "pointer" }}
               onClick={() => handleCardClick(product.slug)}
             >
-              <CardMedia
+               <CardMedia
                 component="img"
-                height="200"
+                sx={{
+                  height: 200,
+                  mt:"20px",
+                  objectFit: "contain", // Ensures image fits without being cropped
+                }}
                 image={
                   product.image_url !== "not found"
                     ? product.image_url
-                    : "images/product-display.jpg"
+                    : "/images/product-display.jpg"
                 }
-                alt={product.title}
               />
+              
               <CardContent>
-                <Typography variant="h6" fontWeight="bold" sx={{ mt: 2, textAlign: "left" }}>
-                  {product.title.length > 50 ? product.title.substring(0,45) + "..." : product.title}
+                <Typography
+                  variant="h6"
+                  fontWeight="bold"
+                  sx={{ mt: 2, textAlign: "left" }}
+                >
+                  {product.title.length > 50
+                    ? product.title.substring(0, 45) + "..."
+                    : product.title}
                 </Typography>
-                <Typography variant="body2" color="textSecondary" sx={{textAlign: "left" }}>
+                <Typography
+                  variant="body2"
+                  color="textSecondary"
+                  sx={{ textAlign: "left" }}
+                >
                   {product.description.length > 100
-                    ? product.description.substring(0, 100) + "..."
-                    : product.description}
+                    ? product.description.replace(/<\/?[^>]+(>|$)/g, "").substring(0, 100) + "..."
+                    : product.description.replace(/<\/?[^>]+(>|$)/g, "")}
                 </Typography>
 
+                <Typography
+                  variant="h6"
+                  color="gray"
+                  sx={{ mt: 2, textAlign: "left" }}
+                >
                   <Typography
-                            variant="h6"
-                            color="gray"
-                            sx={{ mt: 2, textAlign: "left" }}
-                          >
-                            <Typography
-                              component="span"
-                              sx={{ fontWeight: "bold", fontSize: "18px" }}
-                            >
-                              Price:(AED) {" "}
-                            </Typography>
-                            {product.price}
-                          </Typography>
-                
-                          <Typography
-                            variant="caption"
-                            display="block"
-                            color="gray"
-                            sx={{ mt: 1, textAlign: "left" }}
-                          >
-                            <Typography component="span" sx={{ fontWeight: "bold" }}>
-                              Category :
-                            </Typography>{" "}
-                            {product.category_name}
-                          </Typography>
-                
+                    component="span"
+                    sx={{ fontWeight: "bold", fontSize: "18px" }}
+                  >
+                    Price:(AED){" "}
+                  </Typography>
+                  {product.price}
+                </Typography>
+
+                <Typography
+                  variant="caption"
+                  display="block"
+                  color="gray"
+                  sx={{ mt: 1, textAlign: "left" }}
+                >
+                  <Typography component="span" sx={{ fontWeight: "bold" }}>
+                    Category :
+                  </Typography>{" "}
+                  {product.category_name}
+                </Typography>
               </CardContent>
             </Card>
           </Grid>

@@ -8,12 +8,25 @@ function Discover3() {
         {/* Left Side - Content */}
         <Grid item xs={12} md={6}>
           <Box>
-            <Typography variant="h4"  sx={{fontSize:{xs:"24px",sm:"34px"},fontWeight:600,mt:{xs:"30px",sm:'0px'},textAlign:'left'}}>
-              Track your order in real-time
+            <Typography
+              variant="h4"
+              sx={{
+                fontSize: { xs: "24px", sm: "34px" },
+                fontWeight: 600,
+                mt: { xs: "30px", sm: "0px" },
+                textAlign: "left",
+              }}
+            >
+              Track your order
             </Typography>
-            <Typography variant="body1" color="textSecondary" sx={{textAlign:"left",fontSize:{xs:"14px",sm:"16px"}}}>
-              Watch your order every step of the way, from the minute you place
-              it, to when it’s outside your door.
+            <Typography
+              variant="body1"
+              color="textSecondary"
+              sx={{ textAlign: "left", fontSize: { xs: "14px", sm: "16px" } }}
+            >
+              Stay informed every step of the way. Know when your products reach
+              our warehouse in Dubai, when they are shipped, when they arrive in
+              Lebanon, and when they are out for delivery
             </Typography>
           </Box>
         </Grid>
@@ -24,7 +37,12 @@ function Discover3() {
             component="img"
             src="/images/Yubai.png"
             alt="Discover Image"
-            sx={{ width:{xs:"80%",md:'50%'}, borderRadius: 2,height:{xs:"600px",md:"500px"},mt:"40px" }}
+            sx={{
+              width: { xs: "80%", md: "50%" },
+              borderRadius: 2,
+              height: { xs: "600px", md: "500px" },
+              mt: "40px",
+            }}
           />
         </Grid>
       </Grid>
