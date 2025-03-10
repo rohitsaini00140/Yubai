@@ -2,7 +2,6 @@ import React from "react";
 import { Typography, Button } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import FeatureSection from "./FeatureSection";
-import PartnerSection from "./PartnerSection";
 import FirstCard from "./FirstCard";
 import Second from "./SecondCard";
 import ThirdCard from "./ThirdCard";

@@ -24,9 +24,10 @@ function Discover() {
         <Grid item xs={12} md={6}>
           <Box
             component="img"
-            src="/images/Yubai.png"
+            src="/images/Dove.jpg"
             alt="Discover Image"
-            sx={{ width:{xs:"80%",md:'50%'}, borderRadius: 2,height:{xs:"600px",md:"500px"},mt:"40px" }}
+            // sx={{ width:{xs:"80%",md:'50%'}, borderRadius: 2,height:{xs:"400px",md:"500px"},mt:"40px",objectFit: "contain",   }}
+            sx={{ width:{xs:"80%",md:'60%'}, borderRadius: 2,height:{xs:"400px",md:"400px"},mt:"40px",  }}
           />
         </Grid>
       </Grid>

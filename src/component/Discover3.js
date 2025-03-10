@@ -35,14 +35,16 @@ function Discover3() {
         <Grid item xs={12} md={6}>
           <Box
             component="img"
-            src="/images/Yubai.png"
+            src="/images/basmati.jpg"
             alt="Discover Image"
-            sx={{
-              width: { xs: "80%", md: "50%" },
-              borderRadius: 2,
-              height: { xs: "600px", md: "500px" },
-              mt: "40px",
-            }}
+            // sx={{
+            //   width: { xs: "80%", md: "50%" },
+            //   borderRadius: 2,
+            //   height: { xs: "600px", md: "500px" },
+            //   mt: "40px",
+            // }}
+
+            sx={{ width:{xs:"90%",md:'70%'}, borderRadius: 2,height:{xs:"400px",md:"400px"},mt:"40px",  }}
           />
         </Grid>
       </Grid>
