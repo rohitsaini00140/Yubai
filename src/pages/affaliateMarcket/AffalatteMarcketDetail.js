@@ -38,10 +38,35 @@ function AffiliateMarketDetail() {
     fetchProductDetail();
   }, [slug]);
 
+  const handleBuyNowClick = async () => {
+    if (!product?.affiliate_url) return;
+  
+    console.log("Sending request to track affiliate click...");
+  
+    try {
+      const response = await fetch("https://yubaibackend.hhpsoftware.com/api/affiliate-click-count", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          product_id: product.id,
+          slug: product.slug,
+        }),
+      });
+  
+      console.log("Response status:", response.status); // Check HTTP status
+      const data = await response.json();
+      console.log("Response data:", data); // Check API response
+  
+    } catch (error) {
+      console.error("Error tracking click:", error);
+    }
+  };
+  
+
   if (loading) return <Typography>Loading...</Typography>;
   if (!product) return <Typography>Product not found</Typography>;
-
-  console.log(product, "kua aa raha ha ");
 
   return (
     <Container maxWidth="md" sx={{ mt: 5, mb: 10 }}>
@@ -50,7 +75,7 @@ function AffiliateMarketDetail() {
           component="img"
           sx={{
             height: 400,
-            objectFit: "contain", // Ensures image fits without being cropped
+            objectFit: "contain",
           }}
           image={
             product.image_url !== "not found"
@@ -71,26 +96,14 @@ function AffiliateMarketDetail() {
             {product.description.replace(/<\/?[^>]+(>|$)/g, "")}
           </Typography>
 
-          <Typography
-            variant="h6"
-            color="gray"
-            sx={{ mt: 2, textAlign: "left" }}
-          >
-            <Typography
-              component="span"
-              sx={{ fontWeight: "bold", fontSize: "18px" }}
-            >
+          <Typography variant="h6" color="gray" sx={{ mt: 2, textAlign: "left" }}>
+            <Typography component="span" sx={{ fontWeight: "bold", fontSize: "18px" }}>
               Price: (AED){" "}
             </Typography>
             {product.price}
           </Typography>
 
-          <Typography
-            variant="caption"
-            display="block"
-            color="gray"
-            sx={{ mt: 1, textAlign: "left" }}
-          >
+          <Typography variant="caption" display="block" color="gray" sx={{ mt: 1, textAlign: "left" }}>
             <Typography component="span" sx={{ fontWeight: "bold" }}>
               Category :
             </Typography>{" "}
@@ -99,28 +112,29 @@ function AffiliateMarketDetail() {
         </CardContent>
 
         <CardActions>
-        {product?.affiliate_url ? (
-  <Link to={product.affiliate_url} target="_blank" >
-    <Button
-      variant="contained"
-      sx={{
-        backgroundColor: "#ce352f",
-        color: "#fff",
-        height: "35px",
-        fontSize: "14px",
-        borderRadius: "5px",
-        "&:hover": { backgroundColor: "#ce352f" },
-      }}
-    >
-      Buy Now
-    </Button>
-  </Link>
-) :  (
-  <Button variant="contained" disabled sx={{ height: "35px", fontSize: "14px" }}>
-  <PageNotFound/>
-  </Button>
-)}
-
+          {product?.affiliate_url ? (
+            <Link to={product.affiliate_url} 
+            // target="_blank" 
+            onClick={handleBuyNowClick}>
+              <Button
+                variant="contained"
+                sx={{
+                  backgroundColor: "#ce352f",
+                  color: "#fff",
+                  height: "35px",
+                  fontSize: "14px",
+                  borderRadius: "5px",
+                  "&:hover": { backgroundColor: "#ce352f" },
+                }}
+              >
+                Buy Now
+              </Button>
+            </Link>
+          ) : (
+            <Button variant="contained" disabled sx={{ height: "35px", fontSize: "14px" }}>
+              <PageNotFound />
+            </Button>
+          )}
         </CardActions>
       </Card>
     </Container>
