@@ -10,17 +10,27 @@ const HeroSection = () => {
   return (
     <>
       <Box
-        sx={{
+         sx={{
           position: "relative",
           width: "100%",
           height: "50vh",
-          backgroundImage: "url('/images/banner.jpg')",
+          backgroundImage: "url('/about/portral.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
           textAlign: "center",
+       objectFit:"contain",
+      //  "&::before": {
+      //   content: "''",
+      //   position: "absolute",
+      //   top: 0,
+      //   left: 0,
+      //   width: "100%",
+      //   height: "100%",
+      //   backgroundColor: "rgba(0, 0, 0, 0.1)",
+      // },
         }}
       >
         <Container>

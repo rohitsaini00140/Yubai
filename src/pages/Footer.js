@@ -50,6 +50,18 @@ export default function Footer() {
           >
             Privacy Policy
           </Link>
+
+          <Link
+            href="/about"
+            underline="none"
+            color="inherit"
+            sx={{
+              textDecoration: "none",
+              fontSize: { xs: "14px", sm: "16px" },
+            }}
+          >
+          About
+          </Link>
           <Link
             href="/carrier"
             underline="none"

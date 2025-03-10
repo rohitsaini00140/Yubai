@@ -15,6 +15,7 @@ import AffiliateMarketDetail from "./pages/affaliateMarcket/AffalatteMarcketDeta
 import PrivacyPolicy from "./pages/privatepolicy/PrivacyPolicy";
 import TermsConditions from "./pages/TermsConditions/TermsConditions";
 import PageNotFound from "./pages/PagenotFound";
+import About from "./pages/about/About";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
           <Route path="/terms-condition" element={<TermsConditions/>} />
           <Route path="*" element={<PageNotFound />} />
+          <Route path="/about" element={<About />} />
 
           <Route
             path="/affiliate-market/:slug"
