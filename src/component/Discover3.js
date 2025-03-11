@@ -33,19 +33,19 @@ function Discover3() {
 
         {/* Right Side - Image */}
         <Grid item xs={12} md={6}>
-          <Box
-            component="img"
-            src="/images/basmati.jpg"
-            alt="Discover Image"
-            // sx={{
-            //   width: { xs: "80%", md: "50%" },
-            //   borderRadius: 2,
-            //   height: { xs: "600px", md: "500px" },
-            //   mt: "40px",
-            // }}
-
-            sx={{ width:{xs:"90%",md:'70%'}, borderRadius: 2,height:{xs:"400px",md:"400px"},mt:"40px",  }}
-          />
+           <Box
+                      component="img"
+                       src="/homeimg/Graydiscover.gif"
+                      alt="Discover Image"
+                      sx={{
+                        width: { xs: "80%", md: "80%" },
+                        borderRadius: 2,
+                        height: { xs: "400px", md: "600px" },
+                        mt: "40px",
+                        objectFit: "contain",
+                      }}
+                      // sx={{ width:{xs:"100%",md:'100%'}, borderRadius: 2,height:{xs:"100%",md:"100%"},mt:"40px", objectFit:'contain' }}
+                    />
         </Grid>
       </Grid>
     </Container>

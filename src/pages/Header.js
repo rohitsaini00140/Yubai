@@ -43,6 +43,8 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  
   return (
     <AppBar
       position={isFixed ? "fixed" : "static"}
