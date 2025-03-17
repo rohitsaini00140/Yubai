@@ -20,7 +20,7 @@ function FirstCard() {
           <Box   sx={{textAlign:'left'}}>
           
             <Typography variant="body1" sx={{fontWeight:600}}>
-            ‘We love that a place as small as ours can reach such a huge audience, with little effort, thanks to Toters!’
+            ‘We love that a place as small as ours can reach such a huge audience, with little effort, thanks to Yubai!’
             </Typography>
 
             <Typography color="textSecondary" sx={{mt:"10px"}}>

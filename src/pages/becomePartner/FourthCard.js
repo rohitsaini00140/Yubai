@@ -9,7 +9,7 @@ function ForthCard() {
         <Grid item xs={12} md={6}>
           <Box sx={{ textAlign: "left" }}>
             <Typography variant="body1" sx={{fontWeight:600}}>
-            ‘The process is smooth and the service is top-notch. Toters is definitely the go-to platform for quality deliveries.’
+            ‘The process is smooth and the service is top-notch. Yubai is definitely the go-to platform for quality deliveries.’
             </Typography>
 
             <Typography color="textSecondary" sx={{mt:"10px"}}>

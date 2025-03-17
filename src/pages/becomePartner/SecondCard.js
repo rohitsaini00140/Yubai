@@ -12,7 +12,7 @@ function Second() {
               ‘At Burger King, the customer comes first. Quality , Service, and
               Cleanliness is something we don’t compromise on, we choose our
               suppliers very carefully to support us in delivering the highest
-              level of fresh and high quality food. We want to Thank Toters for
+              level of fresh and high quality food. We want to Thank Yubai for
               playing a major role in delivering The King’s flame grilling
               burgers’
             </Typography>

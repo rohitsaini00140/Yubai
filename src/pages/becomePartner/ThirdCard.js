@@ -24,7 +24,7 @@ function ThirdCard() {
         <Grid item xs={12} md={6}>
           <Box sx={{ textAlign: "left" }}>
             <Typography variant="body1" sx={{ fontWeight: 600 }}>
-              ‘Toters’ online delivery platform has allowed us to provide our
+              ‘Yubai’ online delivery platform has allowed us to provide our
               customers with their favorite Meat the Fish dishes in the
               convenience of their own homes. They offer a reliable and fast
               delivery service which we highly recommend to anyone looking for a

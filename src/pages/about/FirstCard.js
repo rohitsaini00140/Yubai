@@ -24,7 +24,7 @@ function FirstCard() {
             </Typography>
 
             <Typography color="textSecondary" sx={{mt:"10px"}}>
-            Ordering with Toters is completely streamlined through technology and a star service team, with real-time updates of your order as it makes its way from the store to your doorstep. Gone are the days of lost drivers and cold food.
+            Ordering with Yubai is completely streamlined through technology and a star service team, with real-time updates of your order as it makes its way from the store to your doorstep. Gone are the days of lost drivers and cold food.
           </Typography>
           </Box>
         </Grid>

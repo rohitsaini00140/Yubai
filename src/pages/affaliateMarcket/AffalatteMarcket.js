@@ -17,7 +17,7 @@ function AffiliateMarket() {
     const fetchProducts = async () => {
       try {
         const response = await fetch(
-          "https://yubaibackend.hhpsoftware.com/api/get-affiliate-product"
+          "https://backend.yubai.ai/api/get-affiliate-product"
         );
         const data = await response.json();
         if (data && data.data) {

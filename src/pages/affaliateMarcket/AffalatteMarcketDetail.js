@@ -20,7 +20,7 @@ function AffiliateMarketDetail() {
     const fetchProductDetail = async () => {
       try {
         const response = await fetch(
-          `https://yubaibackend.hhpsoftware.com/api/get-affiliate-product`
+          `https://backend.yubai.ai/api/get-affiliate-product`
         );
         const data = await response.json();
 
@@ -38,13 +38,15 @@ function AffiliateMarketDetail() {
     fetchProductDetail();
   }, [slug]);
 
+
+
   const handleBuyNowClick = async () => {
     if (!product?.affiliate_url) return;
   
     console.log("Sending request to track affiliate click...");
   
     try {
-      const response = await fetch("https://yubaibackend.hhpsoftware.com/api/affiliate-click-count", {
+      const response = await fetch("https://backend.yubai.ai/api/affiliate-click-count", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

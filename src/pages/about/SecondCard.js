@@ -13,7 +13,7 @@ function Second() {
             </Typography>
 
             <Typography color="textSecondary" sx={{mt:"10px"}}>
-            We work with the best selection of local and international restaurants and stores. Whatever you need or crave, it’s already there on Toters. Your favorite coffee, dinner, fresh fruits, or birthday gift, delivered.
+            We work with the best selection of local and international restaurants and stores. Whatever you need or crave, it’s already there on Yubai. Your favorite coffee, dinner, fresh fruits, or birthday gift, delivered.
             </Typography>
           </Box>
         </Grid>

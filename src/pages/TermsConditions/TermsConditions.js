@@ -25,7 +25,7 @@ function TermsConditions() {
           2. Third Party Products and/or Content
         </Typography>
         <Typography variant="body1" color="textSecondary" sx={{textAlign:"left",fontSize:{xs:"14px",sm:"16px"}}}>
-          You agree that TOTERS does not assume responsibility for any products,
+          You agree that Yubai does not assume responsibility for any products,
           content, services, websites, advertisements, offers, or information
           that is provided by third parties...
         </Typography>
@@ -42,7 +42,7 @@ function TermsConditions() {
           4. Limitation of Liability
         </Typography>
         <Typography variant="body1" color="textSecondary" sx={{textAlign:"left",fontSize:{xs:"14px",sm:"16px"}}}>
-          IN NO EVENT SHALL TOTERS (INCLUDING OUR AFFILIATES, AND EACH OF OUR
+          IN NO EVENT SHALL Yubai (INCLUDING OUR AFFILIATES, AND EACH OF OUR
           RESPECTIVE OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, SHAREHOLDERS,
           RETAIL PARTNERS, LICENSORS, AND SUPPLIERS)...
         </Typography>
@@ -51,7 +51,7 @@ function TermsConditions() {
           5. Indemnification
         </Typography>
         <Typography variant="body1" color="textSecondary" sx={{textAlign:"left",fontSize:{xs:"14px",sm:"16px"}}}>
-          You agree to defend, indemnify and hold harmless TOTERS and its
+          You agree to defend, indemnify and hold harmless Yubai and its
           officers, directors, employees, agents, and affiliates...
         </Typography>
 
@@ -59,7 +59,7 @@ function TermsConditions() {
           6. Disputes & Arbitration
         </Typography>
         <Typography variant="body1" color="textSecondary" sx={{textAlign:"left",fontSize:{xs:"14px",sm:"16px"}}}>
-          If you have a dispute with TOTERS, you agree to contact us first and
+          If you have a dispute with Yubai, you agree to contact us first and
           attempt to work it out amicably...
         </Typography>
 
@@ -75,7 +75,7 @@ function TermsConditions() {
           8. Refund and Cancellation Policy
         </Typography>
         <Typography variant="body1" color="textSecondary" sx={{textAlign:"left",fontSize:{xs:"14px",sm:"16px"}}}>
-          At Toters, our top priority is to ensure our customers' complete
+          At Yubai, our top priority is to ensure our customers' complete
           satisfaction with their order...
         </Typography>
 
