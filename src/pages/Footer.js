@@ -62,7 +62,7 @@ export default function Footer() {
           >
           About
           </Link>
-          <Link
+          {/* <Link
             href="/carrier"
             underline="none"
             color="inherit"
@@ -72,7 +72,7 @@ export default function Footer() {
             }}
           >
             Carrier
-          </Link>
+          </Link> */}
           <Link
             href="/contact"
             underline="none"

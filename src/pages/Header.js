@@ -17,10 +17,10 @@ import AppsIcon from "@mui/icons-material/Apps"; // Correctly imported AppsIcon
 const navItems = [
   { label: "Become A Partner", href: "/partner" },
   // { label: "Deliver for yubai", href: "#" },
-  { label: "Careers", href: "/carrier" },
+  // { label: "Careers", href: "/carrier" },
   { label: "Contact", href: "/contact" },
   // { label: "Privacy", href: "/private" },
-  { label: "Media Updates", href: "/media" },
+  // { label: "Media Updates", href: "/media" },
   { label: "Affiliate Amazon Market", href: "/affiliate-market" },
 ];
 
@@ -69,15 +69,19 @@ const Header = () => {
         {/* Logo */}
         <Typography
           variant="h5"
-          sx={{ fontWeight: "bold", display: "flex", alignItems: "center" }}
+          sx={{ fontWeight: "bold", display: "flex", alignItems: "center",  flexDirection: "column",lineHeight:'0px' }}
         >
-          <Link href={"/"}>
+          <Link href={"/"}   underline="none">
             <img
               src="/Logo/logo.png"
               alt="Logo"
-              style={{ width: 80, marginRight: 10 }}
+              style={{ width: 120, marginRight: 10 }}
             />
+            <br/>
+          <Typography variant="h6" component="span" sx={{textDecoration:"none",color:"black",fontSize:"14px"}}> Delivering Hapiness </Typography>
           </Link>
+          
+        
         </Typography>
 
         {/* Desktop Navigation Links */}

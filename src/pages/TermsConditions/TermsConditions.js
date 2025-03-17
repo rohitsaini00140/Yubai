@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container, Typography, Box, Paper } from "@mui/material";
+import { Container, Typography, Paper } from "@mui/material";
 
 function TermsConditions() {
   return (
@@ -93,7 +93,7 @@ function TermsConditions() {
           <br />
           United Arab Emirates
           <br />
-          info@universalallianceexpress.com
+          operations@yubai.ai
         </Typography>
       </Paper>
     </Container>

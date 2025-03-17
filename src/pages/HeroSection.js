@@ -41,7 +41,7 @@ const HeroSection = () => {
            Delivering Hapiness
           </Typography>
 
-          <Link href="/contact">
+          <Link href="/contact" >
           <Button
             variant="contained"
             sx={{
@@ -49,7 +49,7 @@ const HeroSection = () => {
               color: "#fff",
               height:"35px",
               fontSize: "18px",
-              borderRadius: "8px",
+              // borderRadius: "8px",
               "&:hover": { backgroundColor: "#ce352f" },
             }}
           >

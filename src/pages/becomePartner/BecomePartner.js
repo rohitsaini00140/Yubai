@@ -18,6 +18,7 @@ const BecomePartner = () => {
           width: "100%",
           height: { xs: "60vh", sm: "30vh" },
           backgroundImage: "url('/images/Cover.jpg')",
+          // backgroundImage: "url('/images/WhatsApp.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           display: "flex",

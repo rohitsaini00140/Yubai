@@ -207,7 +207,7 @@ function Contact() {
                     <strong style={{ fontSize: "18px" }}>Email</strong>
                   </Typography>
                   <Typography variant="body2" sx={{ fontSize: "16px",textAlign:'left' }}>
-                    info@universalallianceexpress.com
+                  operations@yubai.ai
                   </Typography>
                 </Box>
               </Grid>
