@@ -6,57 +6,82 @@ import Discover3 from "../component/Discover3";
 import Card from "../component/Card";
 import AppDownloadSection from "../component/AppDownloadSection";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+const slides = [
+  "/homeimg/couple-moving.jpg",
+  "/homeimg/Family.jpg",
+  "/homeimg/family-moving-new-house.jpg",
+];
+
 const HeroSection = () => {
   return (
     <>
-      <Box
-         sx={{
-          position: "relative",
-          width: "100%",
-          height: "50vh",
-          backgroundImage: "url('/about/portral.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          textAlign: "center",
-       objectFit:"contain",
-      //  "&::before": {
-      //   content: "''",
-      //   position: "absolute",
-      //   top: 0,
-      //   left: 0,
-      //   width: "100%",
-      //   height: "100%",
-      //   backgroundColor: "rgba(0, 0, 0, 0.1)",
-      // },
-        }}
-      >
-        <Container>
-          <Typography
-            variant="h3"
-            sx={{ fontWeight: "bold", color: "#fff", mb: 2 }}
-          >
-           Delivering Hapiness
-          </Typography>
+      <Box>
+  
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          spaceBetween={50}
+          slidesPerView={1}
+          // navigation
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 2000 }}
+          loop
+        >
+          {slides.map((slide, index) => (
+            <SwiperSlide key={index}>
+              <Box
+                sx={{
+                  position: "relative",
+                  width: "100%",
+                  height: { xs: "50vh", sm: "60vh" },
+                  backgroundImage: `url(${slide})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  textAlign: "center",
+                  // backgroundSize: "contain", 
 
-          <Link href="/contact" >
-          <Button
-            variant="contained"
-            sx={{
-              backgroundColor: "#ce352f",
-              color: "#fff",
-              height:"35px",
-              fontSize: "18px",
-              // borderRadius: "8px",
-              "&:hover": { backgroundColor: "#ce352f" },
-            }}
-          >
-            GET THE APP
-          </Button>
-          </Link>
-        </Container>
+                  backgroundRepeat: "no-repeat"
+                }}
+              >
+                <Container>
+                  <Typography
+                    variant="h3"
+                    sx={{
+                      fontWeight: "bold",
+                      color: "#fff",
+                      mb: 2,
+                      fontSize: "40px",
+                    }}
+                  >
+                   Delivering Hapiness
+                  </Typography>
+
+                  <Button
+                    variant="contained"
+                    sx={{
+                      backgroundColor: "#ce352f",
+                      color: "#fff",
+                      height: "45px",
+                      fontSize: "18px",
+                      // borderRadius: "8px",
+                      "&:hover": { backgroundColor: "#ce352f" },
+                    }}
+                  >
+                    GET THE APP
+                  </Button>
+                </Container>
+              </Box>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </Box>
       <Discover />
       <Discover2 />

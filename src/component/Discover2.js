@@ -1,21 +1,32 @@
-import React from "react";
-import { Container, Typography, Box, Grid } from "@mui/material";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { Container, Grid, Box, Typography } from "@mui/material";;
 
 function Discover2() {
+
+
+    useEffect(() => {
+      AOS.init({
+        duration: 1000, // Animation duration (1s)
+        once: true, // Ensures animation happens only once
+        easing: "ease-in-out",
+      });
+    }, []);
   return (
     <Container>
       <Grid container spacing={4} alignItems="center">
         {/* Left Side - Content */}
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} data-aos="fade-left">
           <Box
             component="img"
-            src="/homeimg/Gray_Minimalist.gif"
+            src="/homeimg/GrayMinimalistNotificationSpa.gif"
             alt="Discover Image"
             // sx={{ width:{xs:"80%",md:'50%'}, borderRadius: 2,height:{xs:"600px",md:"500px"},mt:"40px" }}
             sx={{
-              width: { xs: "80%", md: "80%" },
+              width: { xs: "100%", md: "80%" },
               borderRadius: 2,
-              height: { xs: "400px", md: "600px" },
+              height: { xs: "100%", md: "600px" },
               mt: "40px",
               objectFit: "contain",
             }}
@@ -23,12 +34,12 @@ function Discover2() {
         </Grid>
 
         {/* Right Side - Image */}
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} data-aos="fade-right">
           <Box>
-            <Typography variant="h4" sx={{fontSize:{xs:"24px",sm:"34px"},fontWeight:600,mt:{xs:"30px",sm:'0px'},textAlign:'left'}}>
+            <Typography variant="h4" sx={{fontSize:{xs:"30px",sm:"34px"},fontWeight:600,mt:{xs:"30px",sm:'0px'},textAlign:'left'}}>
               Order with one click
             </Typography>
-            <Typography variant="body1" color="textSecondary" sx={{textAlign:"left",fontSize:{xs:"14px",sm:"16px"}}}>
+            <Typography variant="body1" color="textSecondary" sx={{textAlign:"left",fontSize:{xs:"16px",sm:"18px"}}}>
               Get what you want, the way you want it, exactly when you want it
               and pay by card or cash. Delivery has never been this easy.
             </Typography>

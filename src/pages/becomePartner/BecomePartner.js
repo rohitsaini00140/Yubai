@@ -18,7 +18,7 @@ const BecomePartner = () => {
           width: "100%",
           height: { xs: "60vh", sm: "30vh" },
           backgroundImage: "url('/images/Cover.jpg')",
-          // backgroundImage: "url('/images/WhatsApp.jpg')",
+          // backgroundImage: "url('/Logo/business-agreement.avif')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           display: "flex",
@@ -48,9 +48,8 @@ const BecomePartner = () => {
         >
           Partner with Us
         </Typography>
-        <Typography sx={{ color: "black", mt: "10px" }}>
-          We offer an end-to-end logistics service that makes it incredibly easy
-          to deliver to customers everywhere.
+        <Typography sx={{ color: "black", mt: "10px",textAlign:"left",lineHeight:"25px"}}>
+        Changes in become a partner Join us in revolutionizing the Lebanese market by becoming a valued partner! Our platform bridges the gap between the UAE and Lebanon, offering customers access to a curated selection of products from Dubai’s top retailers. By partnering with us, you’ll gain exposure to a growing audience in Lebanon, seamless logistics for cross-border shipping, and a collaborative approach to expanding your reach. Together, we can bring the best of the UAE to Lebanon while creating new opportunities for growth and success. Let’s build something extraordinary—partner with us today!
         </Typography>
 
         <Link to="/contact">
@@ -62,7 +61,7 @@ const BecomePartner = () => {
         <FeatureSection />
         {/* <PartnerSection /> */}
 
-        <Box>
+        {/* <Box>
           <Typography
             variant="h3"
             sx={{
@@ -78,7 +77,7 @@ const BecomePartner = () => {
           <ThirdCard />
           <ForthCard />
           <FifthCard />
-        </Box>
+        </Box> */}
       </Box>
     </>
   );
