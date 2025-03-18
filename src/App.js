@@ -35,7 +35,7 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
           <Route path="/terms-condition" element={<TermsConditions/>} />
           <Route path="*" element={<PageNotFound />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about-page" element={<About />} />
 
           <Route
             path="/affiliate-market/:slug"

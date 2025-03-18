@@ -50,13 +50,11 @@ function Contact() {
       return;
     }
 
-    
-
     // Send email via EmailJS
     emailjs
       .send(
-        "service_4vsek7k", // Your Service ID
-        "template_s8q8pxf", // Correct Template ID from the EmailJS dashboard
+        "service_6rfhrvk", // Your Service ID
+        "template_99vzkzg", // Correct Template ID from the EmailJS dashboard
         {
           firstName: formData.firstName,
           lastName: formData.lastName,
@@ -65,7 +63,7 @@ function Contact() {
           requirement: formData.requirement,
           message: formData.message,
         },
-        "gbgxL1Q9FqWmhnjot" // Your Public Key
+        "Ul9odn6d0Od9P-0r6" // Your Public Key
       )
       .then(
         (response) => {
@@ -99,7 +97,7 @@ function Contact() {
 
   return (
     <Stack component={"div"}>
-          <Box
+      <Box
         sx={{
           position: "relative",
           width: "100%",
@@ -118,23 +116,23 @@ function Contact() {
             variant="h3"
             sx={{ fontWeight: "bold", color: "#fff", mb: 2 }}
           >
-           Delivering Hapiness
+            Delivering Hapiness
           </Typography>
 
           <Link href="/contact">
-          <Button
-            variant="contained"
-            sx={{
-              backgroundColor: "#ce352f",
-              color: "#fff",
-              height:"35px",
-              fontSize: "18px",
-              borderRadius: "8px",
-              "&:hover": { backgroundColor: "#ce352f" },
-            }}
-          >
-            GET THE APP
-          </Button>
+            <Button
+              variant="contained"
+              sx={{
+                backgroundColor: "#ce352f",
+                color: "#fff",
+                height: "35px",
+                fontSize: "18px",
+                borderRadius: "8px",
+                "&:hover": { backgroundColor: "#ce352f" },
+              }}
+            >
+              GET THE APP
+            </Button>
           </Link>
         </Container>
       </Box>
@@ -172,7 +170,7 @@ function Contact() {
                   <Typography
                     variant="body2"
                     gutterBottom
-                    sx={{ fontSize: "16px" ,textAlign:'left'}}
+                    sx={{ fontSize: "16px", textAlign: "left" }}
                   >
                     Al Warsan- Office number - S09, Dubai , <br />
                     United Arab Emirates <br />
@@ -191,7 +189,7 @@ function Contact() {
                   <Typography
                     variant="body2"
                     gutterBottom
-                    sx={{ fontSize: "16px",textAlign:'left' }}
+                    sx={{ fontSize: "16px", textAlign: "left" }}
                   >
                     +971 55 654 0154
                   </Typography>
@@ -206,8 +204,11 @@ function Contact() {
                     </span>
                     <strong style={{ fontSize: "18px" }}>Email</strong>
                   </Typography>
-                  <Typography variant="body2" sx={{ fontSize: "16px",textAlign:'left' }}>
-                  operations@yubai.ai
+                  <Typography
+                    variant="body2"
+                    sx={{ fontSize: "16px", textAlign: "left" }}
+                  >
+                    operations@yubai.ai
                   </Typography>
                 </Box>
               </Grid>
@@ -271,7 +272,10 @@ function Contact() {
                     <Autocomplete
                       value={formData.requirement}
                       onChange={(event, newValue) =>
-                        handleChange(event, newValue)
+                        setFormData((prev) => ({
+                          ...prev,
+                          requirement: newValue,
+                        }))
                       }
                       options={[
                         "General Inquiry",
@@ -279,7 +283,7 @@ function Contact() {
                         "Others",
                       ]}
                       renderInput={(params) => (
-                        <TextField {...params} label="Requirement"/>
+                        <TextField {...params} label="Requirement" />
                       )}
                     />
                   </Grid>

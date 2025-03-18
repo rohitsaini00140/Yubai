@@ -1,0 +1,11 @@
+# Enable Rewrite Engine
+RewriteEngine On
+RewriteBase /
+
+# Allow direct access to existing files and directories
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Redirect all other routes to index.html (React Router fix)
+RewriteRule ^.*$ /index.html [L]

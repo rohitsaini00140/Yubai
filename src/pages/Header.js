@@ -75,10 +75,11 @@ const Header = () => {
             <img
               src="/Logo/logo.png"
               alt="Logo"
-              style={{ width: 100, marginRight: 10 }}
+              style={{ width: 110, marginRight: 10 }}
             />
             <br/>
-          <Typography variant="h6" component="span" sx={{textDecoration:"none",color:"black",fontSize:"14px"}}> Delivering Hapiness </Typography>
+          <Typography variant="h6" component="span" sx={{textDecoration:"none",color:"black",fontSize:"18px",fontFamily:{xs:"fangsong",sm:"cursive"},fontWeight: "bolder !important",fontStyle:'italic'}}> 
+            <strong>Delivering Happiness</strong></Typography>
           </Link>
           
         

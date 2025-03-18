@@ -16,8 +16,8 @@ const BecomePartner = () => {
         sx={{
           position: "relative",
           width: "100%",
-          height: { xs: "60vh", sm: "30vh" },
-          backgroundImage: "url('/images/Cover.jpg')",
+          height: { xs: "50vh", sm: "40vh" },
+          backgroundImage: "url('/partnerlogo/business-agreement.avif')",
           // backgroundImage: "url('/Logo/business-agreement.avif')",
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -25,12 +25,13 @@ const BecomePartner = () => {
           alignItems: "center",
           justifyContent: "center",
           textAlign: "center",
+        objectFit:"contain"
         }}
       >
         <Container>
           <Typography
             variant="h3"
-            sx={{ fontWeight: "bold", color: "#fff", mb: 2, fontSize: "40px" }}
+            sx={{ fontWeight: "bold", color: "black", mb: 2, fontSize: "40px" }}
           >
             Fast & easy delivery.
           </Typography>

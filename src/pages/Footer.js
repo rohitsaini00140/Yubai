@@ -52,7 +52,7 @@ export default function Footer() {
           </Link>
 
           <Link
-            href="/about"
+            href="/about-page"
             underline="none"
             color="inherit"
             sx={{
