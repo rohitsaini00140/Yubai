@@ -20,7 +20,8 @@ function Discover2() {
         <Grid item xs={12} md={6} data-aos="fade-left">
           <Box
             component="img"
-            src="/homeimg/GrayMinimalistNotificationSpa.gif"
+            // src="/homeimg/GrayMinimalistNotificationSpa.gif"
+            src="/homeimg/Gray_Minimalist.gif"
             alt="Discover Image"
             // sx={{ width:{xs:"80%",md:'50%'}, borderRadius: 2,height:{xs:"600px",md:"500px"},mt:"40px" }}
             sx={{
@@ -40,8 +41,8 @@ function Discover2() {
               Order with one click
             </Typography>
             <Typography variant="body1" color="textSecondary" sx={{textAlign:"left",fontSize:{xs:"16px",sm:"18px"}}}>
-              Get what you want, the way you want it, exactly when you want it
-              and pay by card or cash. Delivery has never been this easy.
+            Shop from your favorite brands.
+            Experience the convenience of having Dubai’s best online stores at your fingertips, with seamless door-to-door delivery across Lebanon
             </Typography>
           </Box>
         </Grid>

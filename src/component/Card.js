@@ -2,7 +2,7 @@ import { Box, Button, Grid, Typography } from "@mui/material";
 
 const data = [
   {
-    title: "STORES & RESTAURANTS",
+    title: "STORE & RESTAURANT",
     description:
       "Reach new customers, grow your revenues, and deliver to the city’s best clients.",
     buttonText: "PARTNER WITH US",
@@ -10,7 +10,7 @@ const data = [
       "https://img.freepik.com/free-vector/beautiful-green-landscape-background_1048-2991.jpg",
   },
   {
-    title: "DELIVER FOR Dubai",
+    title: "DELIVER FOR YUBAI",
     description:
       "Work flexible hours, earn more money, and deliver for the city’s trendiest restaurants.",
     buttonText: "PARTNER WITH US ",

@@ -41,14 +41,14 @@ const BecomePartner = () => {
         <Typography
           variant="h3"
           sx={{
-            fontSize: { xs: "24px", sm: "34px" },
+            fontSize: { xs: "28px", sm: "34px" },
             fontWeight: 600,
             mt: { xs: "30px", sm: "0px" },
           }}
         >
           Partner with Us
         </Typography>
-        <Typography sx={{ color: "black", mt: "10px",textAlign:"left",lineHeight:"25px"}}>
+        <Typography sx={{ color: "black", mt: "10px",textAlign:"left",lineHeight:"25px",fontSize:{xs:"14px",sm:"18px"}}}>
         Changes in become a partner Join us in revolutionizing the Lebanese market by becoming a valued partner! Our platform bridges the gap between the UAE and Lebanon, offering customers access to a curated selection of products from Dubai’s top retailers. By partnering with us, you’ll gain exposure to a growing audience in Lebanon, seamless logistics for cross-border shipping, and a collaborative approach to expanding your reach. Together, we can bring the best of the UAE to Lebanon while creating new opportunities for growth and success. Let’s build something extraordinary—partner with us today!
         </Typography>
 

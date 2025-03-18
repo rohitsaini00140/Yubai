@@ -18,6 +18,10 @@ const slides = [
   "/homeimg/family-moving-new-house.jpg",
 ];
 
+const handleClick = () => {
+  alert("Coming Soon!");
+};
+
 const HeroSection = () => {
   return (
     <>
@@ -66,6 +70,7 @@ const HeroSection = () => {
 
                   <Button
                     variant="contained"
+                    onClick={handleClick}
                     sx={{
                       backgroundColor: "#ce352f",
                       color: "#fff",

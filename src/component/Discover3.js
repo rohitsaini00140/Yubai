@@ -60,7 +60,8 @@ function Discover3() {
         >
           <Box
             component="img"
-            src="/homeimg/GrayMinimalistNotification3.gif"
+            // src="/homeimg/GrayMinimalistNotification3.gif"
+            src="/homeimg/Graydiscover.gif"
             alt="Discover Image"
             sx={{
               width: { xs: "100%", md: "80%" },
