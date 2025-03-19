@@ -78,7 +78,7 @@ const Header = () => {
               style={{ width: 110, marginRight: 10 }}
             />
             <br/>
-          <Typography variant="h6" component="span" sx={{textDecoration:"none",color:"black",fontSize:"18px",fontFamily:{xs:"fangsong",sm:"cursive"},fontWeight: "bolder !important",fontStyle:'italic'}}> 
+          <Typography variant="h6" component="span" sx={{textDecoration:"none",color:"#d0342c",fontSize:"18px",fontFamily:{xs:"fangsong",sm:"cursive"},fontWeight: "bolder !important",fontStyle:'italic'}}> 
             <strong>Delivering Happiness</strong></Typography>
           </Link>
           
