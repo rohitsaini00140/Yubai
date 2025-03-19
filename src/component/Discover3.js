@@ -60,8 +60,7 @@ function Discover3() {
         >
           <Box
             component="img"
-            // src="/homeimg/GrayMinimalistNotification3.gif"
-            src="/homeimg/Graydiscover.gif"
+            src="/homeimg/GrayMinimalistNotification3.gif"
             alt="Discover Image"
             sx={{
               width: { xs: "100%", md: "80%" },
@@ -70,7 +69,6 @@ function Discover3() {
               mt: "40px",
               objectFit: "contain",
             }}
-            // sx={{ width:{xs:"100%",md:'100%'}, borderRadius: 2,height:{xs:"100%",md:"100%"},mt:"40px", objectFit:'contain' }}
           />
         </Grid>
       </Grid>

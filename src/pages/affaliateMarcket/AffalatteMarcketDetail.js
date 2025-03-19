@@ -38,34 +38,33 @@ function AffiliateMarketDetail() {
     fetchProductDetail();
   }, [slug]);
 
-
-
   const handleBuyNowClick = async () => {
     if (!product?.affiliate_url) return;
-  
+
     console.log("Sending request to track affiliate click...");
-  
+
     try {
-      const response = await fetch("https://backend.yubai.ai/api/affiliate-click-count", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          product_id: product.id,
-          slug: product.slug,
-        }),
-      });
-  
+      const response = await fetch(
+        "https://backend.yubai.ai/api/affiliate-click-count",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            product_id: product.id,
+            slug: product.slug,
+          }),
+        }
+      );
+
       console.log("Response status:", response.status); // Check HTTP status
       const data = await response.json();
       console.log("Response data:", data); // Check API response
-  
     } catch (error) {
       console.error("Error tracking click:", error);
     }
   };
-  
 
   if (loading) return <Typography>Loading...</Typography>;
   if (!product) return <Typography>Product not found</Typography>;
@@ -98,14 +97,26 @@ function AffiliateMarketDetail() {
             {product.description.replace(/<\/?[^>]+(>|$)/g, "")}
           </Typography>
 
-          <Typography variant="h6" color="gray" sx={{ mt: 2, textAlign: "left" }}>
-            <Typography component="span" sx={{ fontWeight: "bold", fontSize: "18px" }}>
+          <Typography
+            variant="h6"
+            color="gray"
+            sx={{ mt: 2, textAlign: "left" }}
+          >
+            <Typography
+              component="span"
+              sx={{ fontWeight: "bold", fontSize: "18px" }}
+            >
               Price: (AED){" "}
             </Typography>
             {product.price}
           </Typography>
 
-          <Typography variant="caption" display="block" color="gray" sx={{ mt: 1, textAlign: "left" }}>
+          <Typography
+            variant="caption"
+            display="block"
+            color="gray"
+            sx={{ mt: 1, textAlign: "left" }}
+          >
             <Typography component="span" sx={{ fontWeight: "bold" }}>
               Category :
             </Typography>{" "}
@@ -115,9 +126,11 @@ function AffiliateMarketDetail() {
 
         <CardActions>
           {product?.affiliate_url ? (
-            <Link to={product.affiliate_url} 
-            // target="_blank" 
-            onClick={handleBuyNowClick}>
+            <Link
+              to={product.affiliate_url}
+              target="_blank"
+              onClick={handleBuyNowClick}
+            >
               <Button
                 variant="contained"
                 sx={{
@@ -133,7 +146,11 @@ function AffiliateMarketDetail() {
               </Button>
             </Link>
           ) : (
-            <Button variant="contained" disabled sx={{ height: "35px", fontSize: "14px" }}>
+            <Button
+              variant="contained"
+              disabled
+              sx={{ height: "35px", fontSize: "14px" }}
+            >
               <PageNotFound />
             </Button>
           )}

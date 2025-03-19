@@ -1,4 +1,4 @@
-import { Button, Link, Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import Discover from "../component/Discover";
 import Discover2 from "../component/Discover2";
@@ -7,7 +7,7 @@ import Card from "../component/Card";
 import AppDownloadSection from "../component/AppDownloadSection";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -28,11 +28,11 @@ const HeroSection = () => {
       <Box>
   
         <Swiper
-          modules={[Navigation, Pagination, Autoplay]}
+          modules={[Navigation, Autoplay]}
           spaceBetween={50}
           slidesPerView={1}
           // navigation
-          pagination={{ clickable: true }}
+          // pagination={{ clickable: true }}
           autoplay={{ delay: 2000 }}
           loop
         >

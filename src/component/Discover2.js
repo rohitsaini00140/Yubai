@@ -20,10 +20,9 @@ function Discover2() {
         <Grid item xs={12} md={6} data-aos="fade-left">
           <Box
             component="img"
-            // src="/homeimg/GrayMinimalistNotificationSpa.gif"
-            src="/homeimg/Gray_Minimalist.gif"
+            src="/homeimg/GrayMinimalistNotification2.gif"
+            // src="/homeimg/Gray_Minimalist.gif"
             alt="Discover Image"
-            // sx={{ width:{xs:"80%",md:'50%'}, borderRadius: 2,height:{xs:"600px",md:"500px"},mt:"40px" }}
             sx={{
               width: { xs: "100%", md: "80%" },
               borderRadius: 2,

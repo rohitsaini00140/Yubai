@@ -51,8 +51,8 @@ function Discover() {
         <Grid item xs={12} md={6} data-aos="fade-left"  data-aos-anchor-placement="top-bottom">
           <Box
             component="img"
-            // src="/homeimg/GrayMinimalistNotification.gif"
-            src="/homeimg/GraMinimalist.gif"
+            src="/homeimg/GrayMinimalistNotification1.gif"
+            // src="/homeimg/GraMinimalist.gif"
             alt="Discover Image"
             sx={{
               width: { xs: "100%", md: "80%" },
