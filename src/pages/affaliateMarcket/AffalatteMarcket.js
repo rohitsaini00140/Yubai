@@ -51,7 +51,7 @@ function AffiliateMarket() {
         {products.map((product) => (
           <Grid item xs={12} sm={4} md={4} key={product.id}>
             <Card
-              sx={{ borderRadius: 2, boxShadow: 3, cursor: "pointer" }}
+              sx={{ borderRadius: 2, boxShadow: 3, cursor: "pointer",height:"500px",minHeight:"500px" }}
               onClick={() => handleCardClick(product.slug)}
             >
                <CardMedia

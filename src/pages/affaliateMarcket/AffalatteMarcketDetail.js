@@ -10,11 +10,13 @@ import {
 } from "@mui/material";
 import { Link, useParams } from "react-router-dom";
 import PageNotFound from "../PagenotFound";
+import { Helmet } from "react-helmet-async";
 
 function AffiliateMarketDetail() {
   const { slug } = useParams();
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
+  
 
   useEffect(() => {
     const fetchProductDetail = async () => {
@@ -69,8 +71,32 @@ function AffiliateMarketDetail() {
   if (loading) return <Typography>Loading...</Typography>;
   if (!product) return <Typography>Product not found</Typography>;
 
+
+console.log(product.meta_description,"kyaaaaaaaaaaaa")
+
   return (
+
+    <>
+
+{!loading && product ? (
+  <Helmet>
+    <title>{product.meta_title}</title>
+    <meta name="description" content={product.meta_description} />
+  </Helmet>
+) : (
+  <Helmet>
+    <title>Loading...</title>
+    <meta name="description" content="Fetching product details..." />
+  </Helmet>
+)}
+
+    
     <Container maxWidth="md" sx={{ mt: 5, mb: 10 }}>
+
+            <Helmet defer={false}>
+              <title>{product.meta_title}</title>
+              <meta name="description" content={product.meta_description} />
+            </Helmet>
       <Card sx={{ borderRadius: 2 }} elevation={0}>
         <CardMedia
           component="img"
@@ -157,6 +183,7 @@ function AffiliateMarketDetail() {
         </CardActions>
       </Card>
     </Container>
+    </>
   );
 }
 
