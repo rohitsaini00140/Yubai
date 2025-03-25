@@ -52,8 +52,8 @@ function AffiliateMarketDetail() {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            product_id: product.id,
-            slug: product.slug,
+            affiliate_product_id: product.id,
+            // slug: product.slug,
           }),
         }
       );

@@ -32,8 +32,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/partner" element={<BecomePartner />} />
           <Route path="/affiliate-market" element={<AffiliateMarket />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
-          <Route path="/terms-condition" element={<TermsConditions/>} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-condition" element={<TermsConditions />} />
           <Route path="*" element={<PageNotFound />} />
           <Route path="/about-page" element={<About />} />
 
@@ -51,3 +51,4 @@ function App() {
 }
 
 export default App;
+ 
