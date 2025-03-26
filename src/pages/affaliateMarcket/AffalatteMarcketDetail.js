@@ -78,25 +78,15 @@ console.log(product.meta_description,"kyaaaaaaaaaaaa")
 
     <>
 
-{!loading && product ? (
-  <Helmet>
-    <title>{product.meta_title}</title>
-    <meta name="description" content={product.meta_description} />
-  </Helmet>
-) : (
-  <Helmet>
-    <title>Loading...</title>
-    <meta name="description" content="Fetching product details..." />
-  </Helmet>
-)}
-
-    
-    <Container maxWidth="md" sx={{ mt: 5, mb: 10 }}>
-
-            <Helmet defer={false}>
-              <title>{product.meta_title}</title>
+       {/* Dynamic Meta Title & Description */}
+       <Helmet>
+              <title>{product.meta_title?.length ? product.meta_title : "Yubai AI | Transforming Data into Intelligent Decisions"}</title>
               <meta name="description" content={product.meta_description} />
             </Helmet>
+    <Container maxWidth="md" sx={{ mt: 5, mb: 10 }}>
+
+
+        
       <Card sx={{ borderRadius: 2 }} elevation={0}>
         <CardMedia
           component="img"
