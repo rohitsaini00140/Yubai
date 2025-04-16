@@ -191,7 +191,8 @@ function Contact() {
                     gutterBottom
                     sx={{ fontSize: "16px", textAlign: "left" }}
                   >
-                    +971 55 654 0154
+                    +971 58 258 4444
+
                   </Typography>
 
                   <Typography
