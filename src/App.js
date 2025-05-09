@@ -31,6 +31,8 @@ function App() {
           {/* <Route path="/media" element={<Media />} /> */}
           <Route path="/contact" element={<Contact />} />
           <Route path="/partner" element={<BecomePartner />} />
+
+          
           <Route path="/affiliate-market" element={<AffiliateMarket />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-condition" element={<TermsConditions />} />
